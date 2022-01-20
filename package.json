@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test:staged": "jest"
+    "test:staged": "jest",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "Matheus Silva",
@@ -25,5 +26,8 @@
     "ts-jest": "^27.1.3",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.4"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
   }
 }

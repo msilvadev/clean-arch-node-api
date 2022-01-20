@@ -1,9 +1,6 @@
-export default {
-  roots: ['<rootDir>/src'],
-  collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
+module.exports = {
   coverageDirectory: 'coverage',
   testEnvironment: 'node',
-  transform: {
-    '.+\\.ts$': 'ts-jest'
-  }
+  collectCoverageFrom: ['**/src/**/*.ts', '!**/src/main/**'],
+  preset: '@shelf/jest-mongodb'
 }
